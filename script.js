@@ -40,14 +40,14 @@
   var SPOTIFY_URL = "https://open.spotify.com/track/2UaswhFiFjhWfIBpiVSfEt?si=bb77d4e1f7b9476b";
   var MUSIC_AT_MS = 2600;       // when the now-playing card appears + song starts
   var SONG_VOLUME = 0.88;       // default volume (0–1) — also adjustable with the slider on screen
-  var VOLUME_STORAGE_KEY = "menna-song-volume";
+  var VOLUME_STORAGE_KEY = "salma-song-volume";
 
   /* Secret visit counter — counts each browser session once, stored online.
      Tap the faint ✦ in the top-left corner 4× quickly to reveal the total. */
-  var VISIT_COUNTER_KEY = "heart-menna-sky-youse-7k2m";
+  var VISIT_COUNTER_KEY = "heart-salma-sky-youse-7k2m";
   var VISIT_COUNTER_HIT = "https://countapi.mileshilliard.com/api/v1/hit/";
   var VISIT_COUNTER_GET = "https://countapi.mileshilliard.com/api/v1/get/";
-  var VISIT_SESSION_KEY = "menna-sky-visit-logged";
+  var VISIT_SESSION_KEY = "salma-sky-visit-logged";
 
   function recordVisit() {
     try {
@@ -449,11 +449,11 @@
 
     var sound = new Soundscape();
 
-    /* personalization: ?to=Name (defaults to Menna) */
+    /* personalization: ?to=Name (defaults to Salma) */
     var NAME = (function () {
       var p = (new URLSearchParams(window.location.search).get("to") || "").trim();
       p = p.replace(/[<>]/g, "").slice(0, 18);
-      return p || "Menna";
+      return p || "Salma";
     })();
     if (PAGE_TITLE && PAGE_TITLE.trim()) {
       document.title = PAGE_TITLE.trim().replace(/\{name\}/gi, NAME);

@@ -1,4 +1,4 @@
-# For Menna — Written in Stars
+# For Salma — Written in Stars
 
 A cinematic particle heart with her name in the sky, a letter, and your song.
 
